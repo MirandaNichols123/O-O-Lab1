@@ -14,7 +14,7 @@ public class Purse
         //checks and updates the count of denomination by adding num to current count
         cash.put(type, cash.getOrDefault(type, 0) + num);
     }
-    //Method to remove a certain number of a specific denomination
+//remove a certain number of a specific denomination
     public double remove(Denomination type, int num)
     {
         //checks if denomination exists
