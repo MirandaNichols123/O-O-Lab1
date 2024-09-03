@@ -6,9 +6,12 @@ public class MakingChange
 {
     public static void main(String[] args)
     {
+        //main window for application
         JFrame frame = new JFrame("Making Change");
+        //makes sure application will terminate after window closes
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(700, 900);
+        //sets size of display window
+        frame.setSize(500, 500);
         //centers the window on the screen
         frame.setLocationRelativeTo(null);
         frame.add(new RegisterPanel());
