@@ -11,7 +11,7 @@ public class MakingChange
         //makes sure application will terminate after window closes
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //sets size of display window
-        frame.setSize(500, 500);
+        frame.setSize(700, 900);
         //centers the window on the screen
         frame.setLocationRelativeTo(null);
         frame.add(new RegisterPanel());

@@ -1,7 +1,9 @@
 package Lab1;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class Purse
 {
@@ -43,7 +45,7 @@ public class Purse
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
-        //iterates through map and append denomination anmes and qualities
+        //iterates through map and append denomination names and qualities
         cash.forEach((denom, count)->
         {
             if(count>0)
@@ -52,6 +54,11 @@ public class Purse
             }
         });
         return !sb.isEmpty() ? sb.toString() : "Empty Purse";
+    }
+    // New method to get entries
+    public Set<Map.Entry<Denomination, Integer>> getEntries()
+    {
+        return Collections.unmodifiableSet(cash.entrySet());
     }
 
 }

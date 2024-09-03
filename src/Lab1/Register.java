@@ -47,18 +47,18 @@ public class Register
         }
         return purse;
     }
-    public static void main(String[] args) {
-        Register register = new Register();
-        Purse purse = register.makeChange(8.9122222);
+    //public static void main(String[] args) {
+        //Register register = new Register();
+        //Purse purse = register.makeChange(8.9122222);
 
         // Simulate removing some denominations from the purse
         //Denomination oneDollarNote = new Denomination("One-Dollar Note", 1.00, "bill", "one_dollar.png");
         //double removedValue = purse.remove(oneDollarNote, 2); // Remove 2 one-dollar notes
 
         //System.out.println("Removed value: " + removedValue);
-        System.out.println("Remaining purse: \n" + purse);
+        //System.out.println("Remaining purse: \n" + purse);
         // Print the total value of the purse
-        double totalValue = purse.getValue();
-        System.out.println("Total value of the purse: $" + totalValue);
-    }
+        //double totalValue = purse.getValue();
+        //System.out.println("Total value of the purse: $" + totalValue);
+    //}
 }
